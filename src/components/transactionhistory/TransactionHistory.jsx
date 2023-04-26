@@ -15,7 +15,7 @@ export const TransactionHistory = ({ items }) => {
         </thead>
 
         <tbody>
-          {items.map(item => {
+          {items.slice(0, 5).map(item => {
             return (
               <tr key={item.id}>
                 <td>{item.type}</td>
